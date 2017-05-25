@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Hello!"
+        android:textColor="#ff1a1a"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/title1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Welcome to my average Calulator app.\n " />
+
+    <TextView
+        android:id="@+id/gradeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title2"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="38dp"
+        android:layout_toLeftOf="@+id/title1"
+        android:layout_toStartOf="@+id/title1"
+        android:text="Grade"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/worthTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="% Worth"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignBaseline="@+id/gradeTitle"
+        android:layout_alignBottom="@+id/gradeTitle"
+        android:layout_alignRight="@+id/title2"
+        android:layout_alignEnd="@+id/title2" />
+
+    <EditText
+        android:id="@+id/gradeInput"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/title2"
+        android:layout_alignStart="@+id/title2"
+        android:layout_below="@+id/gradeTitle"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/title1"
+        android:layout_toStartOf="@+id/title1"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/percentageInput"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/gradeInput"
+        android:layout_alignBottom="@+id/gradeInput"
+        android:layout_alignEnd="@+id/worthTitle"
+        android:layout_alignLeft="@+id/worthTitle"
+        android:layout_alignRight="@+id/worthTitle"
+        android:layout_alignStart="@+id/worthTitle"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/calulateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/percentageInput"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/gradeInput"
+        android:layout_toRightOf="@+id/gradeInput"
+        android:onClick="calulateButton"
+        android:text="Calulate" />
+
+    <TextView
+        android:id="@+id/resultDisplay"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/gradeInput"
+        android:layout_alignStart="@+id/gradeInput"
+        android:layout_below="@+id/calulateButton"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/calulateButton"
+        android:layout_alignRight="@+id/calulateButton"
+        android:layout_below="@+id/resultDisplay"
+        android:layout_marginTop="14dp"
+        android:onClick="test"
+        android:text="Button" />
+
+    <EditText
+        android:id="@+id/testInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/title2"
+        android:layout_alignEnd="@+id/calulateButton"
+        android:layout_alignRight="@+id/calulateButton"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:visibility="invisible" />
+
+</RelativeLayout>
