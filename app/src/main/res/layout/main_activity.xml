@@ -41,15 +41,15 @@
         android:id="@+id/worthTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="% Worth"
-        android:gravity="center"
-        android:textSize="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginEnd="25dp"
         android:layout_alignBaseline="@+id/gradeTitle"
         android:layout_alignBottom="@+id/gradeTitle"
+        android:layout_alignEnd="@+id/title2"
         android:layout_alignRight="@+id/title2"
-        android:layout_alignEnd="@+id/title2" />
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:text="% Wworth"
+        android:textSize="25dp" />
 
     <EditText
         android:id="@+id/gradeInput"
