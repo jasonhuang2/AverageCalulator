@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
@@ -48,7 +49,7 @@
         android:layout_marginEnd="25dp"
         android:layout_marginRight="25dp"
         android:gravity="center"
-        android:text="% Wworth"
+        android:text="% Worth"
         android:textSize="25dp" />
 
     <EditText
@@ -65,6 +66,32 @@
         android:inputType="numberSigned" />
 
     <EditText
+        android:id="@+id/gradeInput2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/gradeInput"
+        android:layout_alignLeft="@+id/gradeInput"
+        android:layout_alignRight="@+id/gradeInput"
+        android:layout_alignStart="@+id/gradeInput"
+        android:layout_below="@+id/percentageInput"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/gradeInput3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/gradeInput2"
+        android:layout_alignLeft="@+id/gradeInput2"
+        android:layout_alignRight="@+id/gradeInput2"
+        android:layout_alignStart="@+id/gradeInput2"
+        android:layout_below="@+id/gradeInput2"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:visibility="invisible" />
+
+    <EditText
         android:id="@+id/percentageInput"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -77,38 +104,53 @@
         android:ems="10"
         android:inputType="numberSigned" />
 
+    <EditText
+        android:id="@+id/percentageInput2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/percentageInput"
+        android:layout_alignLeft="@+id/percentageInput"
+        android:layout_alignRight="@+id/percentageInput"
+        android:layout_alignStart="@+id/percentageInput"
+        android:layout_below="@+id/percentageInput"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/percentageInput3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/percentageInput2"
+        android:layout_alignLeft="@+id/percentageInput2"
+        android:layout_alignRight="@+id/percentageInput2"
+        android:layout_alignStart="@+id/percentageInput2"
+        android:layout_below="@+id/percentageInput2"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:visibility="invisible" />
+
     <Button
         android:id="@+id/calulateButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/percentageInput"
-        android:layout_marginTop="32dp"
-        android:layout_toEndOf="@+id/gradeInput"
-        android:layout_toRightOf="@+id/gradeInput"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
         android:onClick="calulateButton"
-        android:text="Calulate" />
+        android:text="Calulate"
+        android:layout_alignBottom="@+id/resultDisplay"
+        android:layout_toRightOf="@+id/gradeInput2"
+        android:layout_toEndOf="@+id/gradeInput2"
+        android:layout_marginBottom="46dp" />
 
     <TextView
         android:id="@+id/resultDisplay"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_alignLeft="@+id/gradeInput"
-        android:layout_alignStart="@+id/gradeInput"
-        android:layout_below="@+id/calulateButton"
-        android:layout_marginTop="33dp"
+        android:layout_height="40dp"
         android:gravity="center"
-        android:textSize="25dp"/>
-
-    <Button
-        android:id="@+id/test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/calulateButton"
-        android:layout_alignRight="@+id/calulateButton"
-        android:layout_below="@+id/resultDisplay"
-        android:layout_marginTop="14dp"
-        android:onClick="test"
-        android:text="Button" />
+        android:textSize="25dp"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/gradeInput2"
+        android:layout_alignStart="@+id/gradeInput2" />
 
     <EditText
         android:id="@+id/testInput"
@@ -120,5 +162,14 @@
         android:ems="10"
         android:inputType="numberSigned"
         android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/moreButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/percentageInput3"
+        android:layout_centerHorizontal="true"
+        android:onClick="moreButton"
+        app:srcCompat="@drawable/addsign" />
 
 </RelativeLayout>
