@@ -107,11 +107,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void test(View v){
-       // EditText testInput = (EditText)findViewById(R.id.testInput);
-       // testInput.setVisibility(View.VISIBLE);
-     //   Intent intent = new Intent(this, activity2.class);
-    //    startActivity(intent);
+    public void moreInputButton(View v){
+        Intent intent = new Intent(this, moreInput.class);
+        startActivity(intent);
 
     }
 }

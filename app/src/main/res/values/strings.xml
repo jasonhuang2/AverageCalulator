@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Average Calulator</string>
+    
+    <string-array name="moreInputSpinnerOne">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+    </string-array>
+
+    <string-array name="moreInputSpinnerTwo">
+        <item>Five</item>
+    </string-array>
 </resources>
