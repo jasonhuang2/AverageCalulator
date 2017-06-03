@@ -107,6 +107,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void fake(){
+
+    }
     public void moreInputButton(View v){
         Intent intent = new Intent(this, moreInput.class);
         startActivity(intent);
